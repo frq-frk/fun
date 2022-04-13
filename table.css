@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap");
+
+div {
+  margin: 20% 15%;
+  font-family: "poppins";
+}
+
+table {
+  width: 80%;
+  border: 1px solid aliceblue;
+  border-radius: 1em;
+  border-spacing: 0ch;
+  overflow: hidden;
+}
+
+tr:nth-child(odd) {
+  background-color: gainsboro;
+}
+
+tr:first-child {
+  background-color: steelblue;
+}
+
+th {
+  color: white;
+}
+
+td,
+th {
+  padding: 10px;
+}

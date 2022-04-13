@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 1px;
+}
+
+.logo-header {
+  position: relative;
+  left: 10px;
+  float: left;
+}
+
+header nav {
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  background-color: bisque;
+  padding: 10px;
+}

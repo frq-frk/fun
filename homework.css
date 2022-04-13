@@ -1,0 +1,33 @@
+h3 {
+  text-align: center;
+}
+
+table,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+td {
+  height: 20px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.img-col {
+}
