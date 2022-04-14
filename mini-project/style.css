@@ -80,7 +80,7 @@ select {
 }
 
 .slot-form {
-  margin: 120px 150px;
+  margin: 10% 10%;
   padding: 10px;
   /* border: 1px solid lightsteelblue; */
   box-shadow: 1px 3px 2px 1px grey;
@@ -91,5 +91,9 @@ select {
   .container {
     display: grid;
     grid-template-columns: auto;
+  }
+
+  li {
+    float: none;
   }
 }
