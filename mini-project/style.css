@@ -38,8 +38,10 @@ li {
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  width: auto;
+  height: auto;
+  max-height: 500px;
+  max-width: 500px;
   margin: 100px;
 }
 
@@ -79,7 +81,7 @@ select {
 
 .slot-form {
   margin: 120px 150px;
-  padding: 50px;
+  padding: 10px;
   /* border: 1px solid lightsteelblue; */
   box-shadow: 1px 3px 2px 1px grey;
   border-radius: 20px;
