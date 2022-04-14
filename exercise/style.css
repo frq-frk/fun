@@ -1,0 +1,15 @@
+.navbar {
+  background-color: gray;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 20px;
+  margin: 10px;
+}
+
+.active {
+  background-color: green;
+}

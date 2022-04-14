@@ -1,14 +1,86 @@
-header {
-  display: flex;
+* {
+  box-sizing: border-box;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+body {
+  margin: 1px;
 }
 
-div {
-  display: inline-flex;
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 10px;
+  background-color: rgb(202, 202, 202);
+  overflow: hidden;
+  box-shadow: 2px 7px 5px 2px gray;
 }
-.logo-header {
+
+li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 30px;
+  color: black;
+  border-radius: 5px;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+li {
+  float: left;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  margin: 100px;
+}
+
+.footer {
+  background-color: rgb(202, 202, 202);
+  height: 200px;
+}
+
+.footer p {
+  text-align: center;
+  vertical-align: middle;
+  padding: 85px;
+}
+
+.ip-form {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  margin-top: 30px;
+  color: black;
+  background-color: lightblue;
+  opacity: 0.8;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+select {
+  margin-top: 30px;
+}
+
+.slot-form {
+  margin: 120px 150px;
+  padding: 50px;
+  /* border: 1px solid lightsteelblue; */
+  box-shadow: 1px 3px 2px 1px grey;
+  border-radius: 20px;
 }
