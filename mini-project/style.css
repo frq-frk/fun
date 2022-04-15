@@ -34,7 +34,7 @@ li {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 40% 60%;
 }
 
 img {
@@ -42,7 +42,8 @@ img {
   height: auto;
   max-height: 500px;
   max-width: 500px;
-  margin: 100px;
+  margin-top: 100px;
+  margin-left: 10%;
 }
 
 .footer {
@@ -80,8 +81,9 @@ select {
 }
 
 .slot-form {
-  margin: 10% 10%;
-  padding: 10px;
+  margin-right: 20%;
+  margin-top: 10%;
+  padding: 20px;
   /* border: 1px solid lightsteelblue; */
   box-shadow: 1px 3px 2px 1px grey;
   border-radius: 20px;
@@ -98,7 +100,9 @@ select {
   }
 
   img {
-    margin: 0;
+    margin: 20px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   .slot-form {
