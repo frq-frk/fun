@@ -6,6 +6,8 @@ body {
   margin: 1px;
 }
 
+/* nav here */
+
 header ul {
   list-style-type: none;
   margin: 0;
@@ -32,6 +34,8 @@ li {
   float: left;
 }
 
+/* form with a side logo here */
+
 .container {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -46,16 +50,7 @@ li {
   margin-left: 10%;
 }
 
-.footer {
-  background-color: rgb(202, 202, 202);
-  height: 200px;
-}
-
-.footer p {
-  text-align: center;
-  vertical-align: middle;
-  padding: 85px;
-}
+/* Form div */
 
 .ip-form {
   display: block;
@@ -80,6 +75,8 @@ select {
   margin-top: 30px;
 }
 
+/* form inputs */
+
 .slot-form {
   margin-right: 20%;
   margin-top: 10%;
@@ -88,6 +85,86 @@ select {
   box-shadow: 1px 3px 2px 1px grey;
   border-radius: 20px;
 }
+
+.footer {
+  background-color: rgb(202, 202, 202);
+  height: 200px;
+}
+
+.footer p {
+  text-align: center;
+  vertical-align: middle;
+  padding: 85px;
+}
+
+/* Index page styling */
+
+.slider {
+  width: 100%;
+  height: 700px;
+  padding: 10px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.card {
+  width: 350px;
+  height: 400px;
+  margin: 2%;
+  box-shadow: 2px 7px 5px 2px rgb(173, 173, 173);
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.card:hover {
+  opacity: 1;
+  width: 360px;
+  height: 450px;
+  box-shadow: 2px 7px 5px 2px gray;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 35px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.founder {
+  margin: 50px;
+  margin-bottom: 80px;
+  /* margin-top: 30px; */
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.founder img {
+  margin-left: 10%;
+}
+
+.founder p {
+  text-align: justify;
+  margin: 5% 2%;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Media queries here */
 
 @media screen and (max-width: 768px) {
   .container {
@@ -113,60 +190,4 @@ select {
     display: grid;
     grid-template-columns: auto;
   }
-}
-
-.slider {
-  width: 100%;
-  height: 700px;
-  padding: 10px;
-}
-
-.courses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-.card {
-  width: 350px;
-  height: 400px;
-  margin: 2%;
-  box-shadow: 2px 7px 5px 2px gray;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.card-img {
-  width: 100%;
-  height: 320px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 35px;
-}
-
-h3 {
-  text-align: center;
-}
-
-.founder {
-  margin: 50px;
-  margin-bottom: 150px;
-  /* margin-top: 30px; */
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.founder img {
-  margin-left: 10%;
-}
-
-.founder p {
-  text-align: justify;
-  margin: 5% 2%;
-  background-color: cornflowerblue;
-  border-radius: 20px;
-  padding: 10px;
 }
