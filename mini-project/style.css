@@ -87,7 +87,7 @@ select {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .container {
     display: grid;
     grid-template-columns: auto;
