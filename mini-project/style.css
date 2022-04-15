@@ -61,7 +61,7 @@ li {
 button {
   margin-top: 30px;
   color: black;
-  background-color: lightblue;
+  background-color: cornflowerblue;
   opacity: 0.8;
   border-radius: 20px;
   cursor: pointer;
@@ -84,6 +84,7 @@ select {
   /* border: 1px solid lightsteelblue; */
   box-shadow: 1px 3px 2px 1px grey;
   border-radius: 20px;
+  background-color: rgb(218, 216, 216);
 }
 
 .footer {
