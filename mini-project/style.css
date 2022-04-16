@@ -24,6 +24,7 @@ li a {
   padding: 30px;
   color: black;
   border-radius: 5px;
+  transition: all 0.2s;
 }
 
 li a:hover {
@@ -119,8 +120,9 @@ select {
   box-shadow: 2px 7px 5px 2px rgb(173, 173, 173);
   border-radius: 20px;
   overflow: hidden;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .card:hover {
