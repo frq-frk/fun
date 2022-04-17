@@ -17,6 +17,10 @@ header ul {
   box-shadow: 2px 7px 5px 2px gray;
 }
 
+header ul li h1 {
+  text-shadow: 2px 2px gray;
+}
+
 li a {
   display: block;
   text-decoration: none;
@@ -110,6 +114,7 @@ select {
 .courses {
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
   justify-content: space-around;
   margin-top: 10px;
 }
