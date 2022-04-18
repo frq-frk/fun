@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 80px;
+  background-color: brown;
+  box-shadow: 2px 5px 2px lightcoral;
+  text-align: center;
+}
+
+.main {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-color: crimson;
+}
+
+input {
+  width: 90%;
+  padding: 15px;
+  margin: 20px;
+}
+
+button {
+  width: 50%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
