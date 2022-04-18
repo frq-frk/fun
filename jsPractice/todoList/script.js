@@ -2,6 +2,17 @@ var tasklist = document.getElementsByTagName("li");
 
 var i;
 
+var ip = document.getElementById("t-add");
+
+ip.addEventListener("keyup", function(event){
+
+    if(event.keyCode === 13){
+        event.preventDefault();
+        document.getElementById("add-task").click();
+    }
+
+})
+
 for(i = 0; i<tasklist.length; i++){
   
     var span = document.createElement("span");
