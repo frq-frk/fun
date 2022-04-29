@@ -1,0 +1,11 @@
+.jumb-custom {
+  padding: 8%;
+  background-image: url("weather.jpg");
+}
+
+.foot-custom {
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  height: 10%;
+}
