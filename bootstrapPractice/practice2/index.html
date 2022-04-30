@@ -1,43 +1,34 @@
-$(document).ready(function(){
+<!DOCTYPE html>
+<html lang="en">
 
-    new Typed('.effect',{
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-      strings : ["Get weather updates easier and anywhere from here.....","GIVE A TRY!!!!!"],
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
 
-      smartBackspace : true,
+<!-- <p class="card-text">Actual Temperature : ${data.main.temp}&#8451</p>
+<p class="card-text">Temperature feels like : ${data.main.feels_like}&#8451</p>
+<a href="https://www.google.com/search?q=${cityName}" target="_blank" class="btn btn-secondary">To learn more about this
+    city</a> -->
 
-      loop : true,
+<body>
 
-      typeSpeed : 60,
-
-      backSpeed : 40,
-
-      startDelay : 80,
-    })
-
-    $('#ip-location').on('keyup',function(e){
-        
-        var cityName = e.target.value;
-
-        const APIKEY = "17e9a55a22d9c41dbe248147e543063a";
-
-        $.ajax({
-            
-            url : `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKEY}&units=metric`
-        
-        }).done(function(data){
-
-            console.log(data);
-            
-            $('#profile').html(`
-            
-            <div class="conatiner mx-auto">
+    <div class="conatiner mx-auto">
 
         <div class="row justify-content-center align-content-between">
             <div class="col-lg-4 col-md-12">
 
                 <div class="card m-auto" style="width: 18rem;">
-                    <h5 class="card-title">City : ${cityName}</h5>
+                    <h5 class="card-title" style="display: inline;">City : ${cityName}</h5>
+                    <a href="" class="btn btn-secondary">Know more about this city</a>
                     <img class="card-img-top" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
                         alt="Card image cap">
                     <div class="card-body">
@@ -57,7 +48,7 @@ $(document).ready(function(){
                     <div class="col-lg-12">
                         <div class="card m-auto" style="max-width: 18rem;">
                             <div class="card-body text-dark">
-                                <h5 class="card-title">Temperature</h5>
+                                <h5 class="card-title">Temperature title</h5>
                                 <p class="card-text">Actual Temperature : ${data.main.temp}&#8451</p>
                                 <p class="card-text">Minimum Temperature : ${data.main.temp_min}&#8451</p>
                                 <p class="card-text">Maximum Temperature : ${data.main.temp_max}&#8451</p>
@@ -71,8 +62,8 @@ $(document).ready(function(){
                         <div class="card m-auto" style="max-width: 18rem;">
                             <div class="card-body text-dark">
                                 <h5 class="card-title">Wind and Humidity</h5>
-                                <p class="card-text">Wind Speed : ${data.wind.speed}</p>
-                                <p class="card-text">Wind Angle : ${data.wind.deg} degrees</p>
+                                <p class="card-text">Wind : Speed - ${data.wind.speed} and degree - ${data.wind.speed}
+                                </p>
                                 <p class="card-text">Humidity: ${data.main.humidity}</p>
                             </div>
                         </div>
@@ -82,8 +73,10 @@ $(document).ready(function(){
         </div>
 
     </div>
-            
-            `)
-        })
-    })
-})
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
