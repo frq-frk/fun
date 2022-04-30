@@ -18,6 +18,7 @@ $(document).ready(function(){
             <div class="container mx-auto mb-5">
             
             <div class="card" style="width: 18rem;">
+            <h5 class="card-title">City : ${cityName}</h5>
             <img class="card-img-top" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Weather : ${data.weather[0].description}</h5>
