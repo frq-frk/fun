@@ -1,4 +1,20 @@
 $(document).ready(function(){
+
+    new Typed('.effect',{
+
+      strings : ["Get weather updates easier and anywhere from here.....","GIVE A TRY!!!!!"],
+
+      smartBackspace : true,
+
+      loop : true,
+
+      typeSpeed : 60,
+
+      backSpeed : 40,
+
+      startDelay : 80,
+    })
+
     $('#ip-location').on('keyup',function(e){
         
         var cityName = e.target.value;
