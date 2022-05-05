@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10%;
+  box-shadow: 1px 3px 15px lightgray;
+}
+
+h1 span {
+  color: goldenrod;
+  background-color: black;
+  padding: 1%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  font-weight: bolder;
+}
+
+.search_icon {
+  display: inline-block;
+}
+
+.search {
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px lightgray;
+  margin-left: auto;
+}
+
+.search-ip {
+  border: none;
+  padding: 2px;
+  margin: 5px;
+}
+
+.search-ip:focus {
+  outline: none;
+}
+
+.icon {
+  color: black;
+  display: none;
+}
