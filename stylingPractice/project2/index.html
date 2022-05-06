@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Gaming Website</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <img src="images/Playstation_Img/logo.png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/Playstation_Img/menu.png" alt="" class="menu-icon" id="menu-icon">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br>Dualshock</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+
+                <button type="button">Buy Now <img src="images/Playstation_Img/arrow.png" alt=""></button>
+            </div>
+
+            <div class="col-2">
+                <img src="images/Playstation_Img/controller.png" alt="" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/Playstation_Img/add.png" alt="">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="images/Playstation_Img/fb.png" alt="">
+            <img src="images/Playstation_Img/ig.png" alt="">
+            <img src="images/Playstation_Img/tw.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        const m_icon = document.getElementById("menu-icon");
+
+        const m_list = document.getElementById("menuList");
+        m_list.style.maxHeight = "0px";
+
+        m_icon.addEventListener("click", () => {
+
+            // console.log(m_list.style.maxHeight)
+
+            if (m_list.style.maxHeight == "0px") {
+
+                m_list.style.maxHeight = "130px";
+
+            } else {
+                // console.log("hereee")
+                m_list.style.maxHeight = "0px";
+            }
+
+
+        })
+
+    </script>
+
+</body>
+
+</html>
