@@ -17,28 +17,95 @@
     <div class="container">
 
         <div class="navbar">
+
+            <a href="javascript:toggleNav();" class="icon">
+                <i class="fa fa-bars"></i></a>
+
             <h1>Digital<span>Diary</span></h1>
             <nav>
-                <ul class="nav_links">
+                <ul class="nav_links" id="nav_links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Create</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
                 </ul>
-            </nav>
 
-            <div class="search">
-                <form action="#">
-                    <span class="fa fa-search search_icon"></span><input type="text" class="search-ip">
+            </nav>
+            <div class="app">
+                <button>Go to App</button>
+            </div>
+
+
+        </div>
+
+        <div class="section">
+            <div class="col-1 col-patch">
+                <h3>&ldquo;save your day into the book of memories here... Completely digital&rdquo;</h3>
+            </div>
+
+            <div class="col-2">
+                <img src="images/side_img1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="section" id="features">
+
+            <div class="card">
+                <i class="fas fa-check-circle fa-4x"></i>
+                <h4>Easy to Use</h4>
+                <p>The interface is soo handy that it's better than having a pocket dairy</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-lock fa-4x"></i>
+                <h4>Secure Authentication</h4>
+                <p>Measures for the integrity are highly prioritized</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-user-circle fa-4x"></i>
+                <h4>Easy Signup</h4>
+                <p>No complecated prodecures to sign up</p>
+            </div>
+
+        </div>
+
+        <div class="section" id="subscribe">
+            <div class="col-1">
+                <form action="">
+                    <input type="email" placeholder="email">
+                    <input type="phone" placeholder="phone">
+                    <button>Signup</button>
                 </form>
             </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+            <div class="col-2">
+                <img src="images/newLetter.jpg" alt="">
+            </div>
         </div>
 
-
+        <div class="footer">
+            Copyright@2022
+        </div>
 
     </div>
+
+    <script>
+
+        const links = document.getElementById("nav_links");
+
+        // console.log(links.style.maxWidth);
+
+        function toggleNav() {
+            console.log(links.style.maxWidth);
+
+            if (links.style.maxWidth == "100%") {
+                links.style.maxWidth = "0px";
+            } else {
+                links.style.maxWidth = "100%";
+            }
+        }
+
+    </script>
 
 </body>
 
