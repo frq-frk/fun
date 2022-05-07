@@ -19,6 +19,15 @@ for(var i = 0;i<SQUARES;i++){
 
     })
 
+    sqr.addEventListener("mousedown",()=>{
+
+        const color = randomColor();
+
+        sqr.style.backgroundColor = color;
+        sqr.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+
+    })
+
     sqr.addEventListener("mouseout",() =>{
         sqr.style.backgroundColor = "#1d1d1d"
         sqr.style.boxShadow = "0px 0px 2px #000"
