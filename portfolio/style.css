@@ -149,4 +149,8 @@ p {
   .col {
     margin-bottom: 30px;
   }
+
+  body > p {
+    margin: 30px;
+  }
 }
