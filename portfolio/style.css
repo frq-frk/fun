@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata";
+  background-color: black;
+  color: white;
+}
+
+body > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body > p {
+  max-width: 500px;
+  margin: 5% auto;
+}
+/* navBar */
+
+.navbar {
+  width: 100%;
+  padding: 2% 5%;
+  /* position: sticky;
+  top: 0px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.nav li a:hover {
+  color: gray;
+}
+
+.nav-icon {
+  display: none;
+}
+
+/*  */
+
+.intro {
+  width: 100%;
+  margin: 10% 10%;
+  line-height: 2.5rem;
+}
+
+.intro h5,
+h2,
+h4 {
+  display: none;
+  color: white;
+}
+
+.intro h5 {
+  font-size: large;
+}
+
+.intro h2 {
+  font-size: xx-large;
+}
+
+.intro h4 {
+  font-size: large;
+}
+
+#cv-link {
+  display: none;
+}
+
+.two-col {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+  margin-bottom: 5%;
+}
+
+.col {
+  padding: 5%;
+}
+
+.col img {
+  border-radius: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.card {
+  padding: 3% 5%;
+}
+
+.card-col1 {
+  flex-basis: 70%;
+}
+
+.card-col1 h3,
+p {
+  margin-bottom: 20px;
+}
+
+.card-col2 {
+  flex-basis: 30%;
+  margin-left: 20px;
+}
+
+#experience {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-icon {
+    display: block;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .two-col {
+    flex-flow: column;
+  }
+
+  .col {
+    margin-bottom: 30px;
+  }
+}
