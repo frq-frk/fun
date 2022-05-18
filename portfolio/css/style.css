@@ -57,6 +57,7 @@ h4 {
   height: 100vh;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   padding: 0 10%;
 }
 
@@ -68,27 +69,19 @@ h4 {
   border-radius: 30px;
 }
 
-.cards {
-  display: flex;
-  height: 100vh;
-  flex-flow: column;
-  justify-content: space-around;
-  text-align: center;
-}
-.card {
-  padding: 3% 5%;
-}
-
 .card-col1 {
   flex-basis: 70%;
+  text-align: justify;
+  padding: 5%;
 }
 
 .card-col2 {
   flex-basis: 30%;
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  padding: 0 5%;
 }
 
-#experience {
+#ex_sec {
   line-height: 2rem;
 }
 
@@ -121,6 +114,7 @@ h4 {
   .two-col {
     flex-flow: column;
     height: 50vh;
+    margin-bottom: 5%;
   }
 
   .cards {

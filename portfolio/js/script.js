@@ -11,5 +11,5 @@ $(document).ready(() => {
 })
 
 function toggleNav(e){
-    $('#nav').toggle(300);
+    $('#nav').toggle(400);
 }
