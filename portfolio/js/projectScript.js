@@ -1,3 +1,8 @@
+function toggleNav(e){
+    $('#nav').toggle(400);
+}
+
+
 // Projects page styling
 
 const sliderContainer = document.querySelector('.slider-container')
@@ -11,8 +16,8 @@ let activeSlide = 0;
 
 sliderLeft.style.top = `-${(slidesLength-1) * 100}vh`
 
-console.log("activeSlide", activeSlide);
-console.log("slides Length", slidesLength);
+// console.log("activeSlide", activeSlide);
+// console.log("slides Length", slidesLength);
 
 const changeSlide = (dir) => {
 

@@ -39,3 +39,18 @@ nav ul {
 .nav-icon {
   display: none;
 }
+
+@media screen and (max-width: 800px) {
+  .nav-icon {
+    display: block;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px;
+  }
+
+  .nav {
+    display: none;
+  }
+}

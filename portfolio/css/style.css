@@ -94,19 +94,6 @@ h4 {
 }
 
 @media screen and (max-width: 800px) {
-  .nav-icon {
-    display: block;
-  }
-
-  .navbar li {
-    display: block;
-    margin: 10px;
-  }
-
-  .nav {
-    display: none;
-  }
-
   .intro {
     height: 50vh;
   }

@@ -13,3 +13,7 @@ $(document).ready(() => {
 function toggleNav(e){
     $('#nav').toggle(400);
 }
+
+const screen_height = window.innerHeight();
+
+window.onscroll(scrollBy(screen_height))
